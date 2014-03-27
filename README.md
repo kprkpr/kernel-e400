@@ -5,9 +5,13 @@ Toolchains:  git clone https://github.com/DooMLoRD/android_prebuilt_toolchains.g
 Instrucciones
 
 export ARCH=arm
+
 export SUBARCH=arm
+
 make mrproper
+
 make icsconfige0_defconfig
+
 make V=0 -j2 CROSS_COMPILE=/home/---/android_prebuilt_toolchains/arm-eabi-4.4.3/bin/arm-eabi- zImage
 
 --
